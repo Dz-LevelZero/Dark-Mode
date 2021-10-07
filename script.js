@@ -25,18 +25,18 @@ const toggleDarkLightMode = (DARK_THEME) => {
 } 
 
 // Switch Theme Dynamically
-const switchTheme = (event) => {
-  // console.log(event.target.checked); 
-  if (event.target.checked) {
-    document.documentElement.setAttribute("data-theme", DARK_THEME);
-    localStorage.setItem("theme", DARK_THEME);
-    toggleDarkLightMode(DARK_THEME);
-  } else {
-    document.documentElement.setAttribute("data-theme", LIGHT_THEME);
-    localStorage.setItem("theme", LIGHT_THEME);
-    toggleDarkLightMode(false);
-  }
-}
+// const switchTheme = (event) => {
+//   // console.log(event.target.checked); 
+//   if (event.target.checked) {
+//     document.documentElement.setAttribute("data-theme", DARK_THEME);
+//     localStorage.setItem("theme", DARK_THEME);
+//     toggleDarkLightMode(DARK_THEME);
+//   } else {
+//     document.documentElement.setAttribute("data-theme", LIGHT_THEME);
+//     localStorage.setItem("theme", LIGHT_THEME);
+//     toggleDarkLightMode(false);
+//   }
+// }
 
 // Event Listener
 toggleSwitch.addEventListener("change", switchTheme)
